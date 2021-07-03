@@ -36,7 +36,7 @@ public class AuthorSelectApp {
 		    
 		    // 4.결과처리
 		    while(rs.next()) {
-		    	int authorId = rs.getInt("author_id");
+		    	int authorId = rs.getInt(1); //순서로도 가능함 (숫자)
 		    	String authorName = rs.getString("author_name");
 		    	String authorDesc = rs.getString("author_desc");
 		    	
