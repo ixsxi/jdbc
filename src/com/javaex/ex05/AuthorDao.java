@@ -1,6 +1,6 @@
 //메소드 파라미를 Vo사용 
 
-package com.javaex.ex03_1;
+package com.javaex.ex05;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

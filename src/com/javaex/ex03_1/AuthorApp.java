@@ -40,7 +40,8 @@ public class AuthorApp {
 		
 		
 		//작가수정 iCount 사용은 생략했음
-		int uCount = authorDao.authorUpdate(3, "주형준 사스케","우치하일족");
+		AuthorVo uAuthorVo = new AuthorVo(3, "주형준 사스케","우치하일족");
+		int uCount = authorDao.authorUpdate(uAuthorVo);
 
 		//리스트 출력
 		//DB에서 가져오기
@@ -52,7 +53,7 @@ public class AuthorApp {
 		 
 		
 		//작가삭제
-		int dCount = authorDao.authorDelet(7);
+		int dCount = authorDao.authorDelete(7);
 		//리스트출력
 		authorList = authorDao.getAuthorList();
 		//for문으로 출력 

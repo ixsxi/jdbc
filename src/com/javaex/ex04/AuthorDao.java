@@ -17,7 +17,7 @@ public class AuthorDao {
 	private PreparedStatement pstmt = null;
 	private ResultSet rs =null;
 	
-	private String driver = "oracle.jdbc.driver.OracleDriver"
+	private String driver = "oracle.jdbc.driver.OracleDriver";
 	// 생성자
 
 	// 메소드-gs
